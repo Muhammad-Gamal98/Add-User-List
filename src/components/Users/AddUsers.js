@@ -14,8 +14,8 @@ const AddUser = props => {
       console.log("enter user and age or valid");
       return;
     }
+    props.OnAddUser(input)
     setInput({ name: "", age: "" });
-    console.log(input)
   }
    const useNameHandlerChange = (event) => {
      setInput((previnput) => {
